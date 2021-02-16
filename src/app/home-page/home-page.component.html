@@ -1,0 +1,8 @@
+<body>
+  <div *ngFor="let item of menus">
+    <mat-card>
+      <button mat-button color="primary" (click)="onClickButton(item.id)">{{item.valor}}</button>
+    </mat-card>
+  </div>
+</body>
+

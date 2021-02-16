@@ -1,0 +1,35 @@
+<div class="container" class="mat-elevation-z8">
+  <section>
+    <div class="example-button-row">
+      <a href="/"><button mat-raised-button color="primary">Menu</button></a>
+    </div>
+  </section>
+  <br>
+  <form [formGroup] = formPaciente (ngSubmit) = "onSubmit()">
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome" formControlName="nome">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Sexo</mat-label>
+        <input matInput placeholder="Sexo" formControlName="sexo">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Telefone</mat-label>
+        <input matInput placeholder="Telefone" formControlName="telefone">
+      </mat-form-field>
+    </p>
+
+    <section>
+      <div class="example-button-row">
+        <button mat-raised-button color="primary" type="submit">Cadastrar</button>
+      </div>
+    </section>
+  </form>
+
+</div>
